@@ -13,16 +13,16 @@ st.set_page_config(
 )
 
 colors = [
-    "#67000d",  # Merah sangat gelap
-    "#a50f15",
-    "#cb181d",
-    "#ef3b2c",
-    "#fb6a4a",
-    "#fc9272",
-    "#fcbba1",
-    "#fee0d2",
-    "#fff5f0",
-    "#f7e1de",  # Merah sangat terang
+    "#08306b",  # Biru sangat gelap
+    "#08519c",
+    "#2171b5",
+    "#4292c6",
+    "#6baed6",
+    "#9ecae1",
+    "#c6dbef",
+    "#deebf7",
+    "#f7fbff",
+    "#d0e1f2",  # Biru sangat terang
 ]
 
 
@@ -35,10 +35,8 @@ def load_data(file_path):
 data = load_data('data.csv')
 
 # Menampilkan judul untuk peta di sidebar
-st.sidebar.markdown("<h1 style='text-align: left; color: #008000;'>Peta Kepadatan Penduduk Banggae Timur</h1>", unsafe_allow_html=True)
+st.title("Peta Kepadatan Penduduk Banggae Timur")
 
-st.sidebar.write("Kecamatan Banggae Timur merupakan salah satu kecamatan yang terletak di Kabupaten Majene, Provinsi Sulawesi Barat, Indonesia.")
-st.sidebar.write("Setiap warna mewakili tingkat kepadatan yang berbeda, dengan warna hijau tua menunjukkan kepadatan tertinggi.")
 # Menampilkan data dalam tabel di sidebar
 st.sidebar.write("Data yang digunakan:")
 st.sidebar.dataframe(data)
